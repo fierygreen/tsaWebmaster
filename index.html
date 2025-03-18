@@ -1,105 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Green Plate - Vegetarian Restaurant</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FreshlyMade</title>
+    <link rel="icon" type="image/svg+xml" href="/public/images/leaf.svg" />
 </head>
 <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-success">
-        <div class="container-fluid">
-            <a class="navbar-brand text-white" href="#">Green Plate</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link active text-white" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="menu.html">Menu</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="about.html">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="contact.html">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <header class="hero bg-image text-center text-white d-flex align-items-center" style="background-image: url('images/restaurant-hero.jpg'); height: 50vh;">
-        <div class="container">
-            <h1 class="display-4">Fresh, Local, Sustainable</h1>
-            <p class="lead">Farm-to-table vegetarian cuisine that supports sustainability and celebrates flavor.</p>
-            <a href="menu.html" class="btn btn-primary btn-lg">Explore Our Menu</a>
-        </div>
-    </header>
-
-    <!-- About Us Section -->
-    <section id="about" class="py-5 bg-light">
-        <div class="container">
-            <h2 class="text-center">Our Approach</h2>
-            <p class="text-center">At Green Plate, we specialize in delicious vegetarian meals prepared with the freshest local ingredients. We focus on sustainability, using farm-to-table practices to ensure our food is not only healthy but also kind to the environment.</p>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="images/farm-to-table.jpg" class="card-img-top" alt="Farm-to-table">
-                        <div class="card-body">
-                            <h5 class="card-title">Farm-to-Table</h5>
-                            <p class="card-text">We work closely with local farms to source the freshest organic produce, ensuring every dish is as nutritious as it is delicious.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="images/sustainability.jpg" class="card-img-top" alt="Sustainability">
-                        <div class="card-body">
-                            <h5 class="card-title">Sustainability</h5>
-                            <p class="card-text">Our restaurant practices eco-friendly methods, from composting to using recyclable packaging, to reduce our environmental impact.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="images/healthy-food.jpg" class="card-img-top" alt="Healthy Food">
-                        <div class="card-body">
-                            <h5 class="card-title">Healthy Food</h5>
-                            <p class="card-text">Our dishes are made with wholesome, plant-based ingredients that promote good health and sustainability for the planet.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="bg-dark text-white text-center py-4">
-        <p>&copy; 2025 Green Plate | All Rights Reserved</p>
-    </footer>
-
-    <!-- Bootstrap JS and dependencies -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
-    <script>
-        // Smooth scroll effect for anchor links
-        document.querySelectorAll('a').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-    
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
-    </script>
-    
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
 </body>
 </html>
